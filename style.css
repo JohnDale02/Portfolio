@@ -145,7 +145,7 @@ nav ul li a:hover::after{
 }
 .strengths-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -160,19 +160,21 @@ nav ul li a:hover::after{
 .strengths-list div i{
     font-size: 50px;
     margin-bottom: 30px;
+    text-align: center;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
 .strengths-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    text-align: center;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
-.strengths-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
+
 .strengths-list div:hover{
     background: #399eff;
     transform: translateY(-10px);
@@ -183,7 +185,7 @@ nav ul li a:hover::after{
 }
 .work-list{
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
