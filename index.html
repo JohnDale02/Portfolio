@@ -16,15 +16,15 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#strengths">Strengths</a></li>
+                <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <h1>Hi, I'm <span>John</span><br>A Computer Engineer</h1>
+            <h1>Hi, I'm <span>John</span><br>a <span class="auto-input"></span></h1>
         </div>
     </div>
 </div>
@@ -69,28 +69,30 @@
         </div>
     </div>
 </div>
-<!-- ---------services---------------- -->
-<div id="services">
+<!-- ---------strengths---------------- -->
+<div id="strengths">
     <div class="container">
         <h1 class="sub-title">My Technical Strengths</h1>
-        <div class="services-list">
+        <div class="strengths-list">
             <div>
                 <i class="fas fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
+                <h2>Software Automation</h2>
             </div>
             <div>
-                <i class="fas fa-crop-alt"></i>
-                <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>Embedded Systems</h2>
             </div>
             <div>
-                <i class="fab fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
+                <i class="fa-solid fa-server"></i>
+                <h2>SQL Databases</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Hardware Security</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-tower-cell"></i>
+                <h2>5G Architecture</h2>
             </div>
         </div>
     </div>
@@ -98,7 +100,7 @@
 <!-- ----------portfolio------------ -->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">Personal Projects</h1>
         <div class="work-list">
             <div class="work">
                 <video autoplay muted loop>
@@ -162,8 +164,8 @@
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fas fa-paper-plane"></i> johnkdale02@gmail.com</p>
                 <div class="social-icons">
-                    <a href=""><i class="fab fa-github"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/JohnDale02"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/johndale02/"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
@@ -228,6 +230,16 @@
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-input", {
+        strings: ["Computer Engineer", "Creative Thinker", "Leader"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+
     })
   </script>
 </body>
